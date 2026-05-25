@@ -1,0 +1,66 @@
+/* =========================
+    Loading
+========================= */
+#loading {
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+
+    background-image: url('../../assets/images/loading.png');
+    background-size: 560px 80px;
+
+    opacity: 0.3;
+
+    filter:
+        brightness(0.8)
+        contrast(1.6)
+        drop-shadow(0 0 6px rgba(0,0,0,0.25));
+    transition: 0.3s;
+}
+
+.icon:nth-child(1) { background-position: 0 0; }
+.icon:nth-child(2) { background-position: -80px 0; }
+.icon:nth-child(3) { background-position: -160px 0; }
+.icon:nth-child(4) { background-position: -240px 0; }
+.icon:nth-child(5) { background-position: -320px 0; }
+.icon:nth-child(6) { background-position: -400px 0; }
+.icon:nth-child(7) { background-position: -480px 0; }
+
+.icon.active {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+/* =========================
+    白光特效
+========================= */
+#flash {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+}
+
+#loading.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+}

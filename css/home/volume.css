@@ -1,0 +1,68 @@
+.site-volume {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 180px;
+    height: 56px;
+    z-index: 80;
+}
+
+/* =========================
+   Music Button
+========================= */
+
+.music-note {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 50%;
+    background: rgba(18, 20, 52, 0.42);
+    color: #f3efff;
+    font-size: 24px;
+    cursor: pointer;
+    text-shadow: 0 0 16px rgba(225, 185, 255, 0.8);
+    transition:
+        color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.music-note:hover {
+    color: var(--pink);
+    background: rgba(170, 120, 255, 0.18);
+    box-shadow: 0 0 18px rgba(220, 160, 255, 0.28);
+}
+
+.music-note.is-muted {
+    color: #8a839f;
+    text-shadow: none;
+}
+
+/* =========================
+   Volume Slider
+========================= */
+
+.site-volume-slider {
+    position: absolute;
+    top: 11px;
+    left: 48px;
+    width: 0;
+    opacity: 0;
+    pointer-events: none;
+    accent-color: #c69cff;
+    transition:
+        width 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.site-volume:hover .site-volume-slider,
+.site-volume:focus-within .site-volume-slider {
+    width: 120px;
+    opacity: 1;
+    pointer-events: auto;
+}

@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* =========================
+    Loading
+========================= */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+
+    background-image: url('../assets/images/loading.png');
+    background-size: 560px 80px;
+
+    opacity: 0.3;
+
+    filter:
+        brightness(0.8)
+        contrast(1.6)
+        drop-shadow(0 0 6px rgba(0,0,0,0.25));
+
+    transition: 0.3s;
+}
+
+.icon:nth-child(1) { background-position: 0 0; }
+.icon:nth-child(2) { background-position: -80px 0; }
+.icon:nth-child(3) { background-position: -160px 0; }
+.icon:nth-child(4) { background-position: -240px 0; }
+.icon:nth-child(5) { background-position: -320px 0; }
+.icon:nth-child(6) { background-position: -400px 0; }
+.icon:nth-child(7) { background-position: -480px 0; }
+
+.icon.active {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+/* =========================
+    白光特效
+========================= */
+#flash {
+    position: fixed;
+    inset: 0;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.2s ease;
+    z-index: 50;
+}
+
+/* =========================
+    背景
+========================= */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/images/桌布.jpg') center/cover no-repeat;
+    filter: brightness(0.8);
+}
+
+/* =========================
+    卡片
+========================= */
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 300px;
+    max-width: 60vw;
+    padding: 20px;
+    
+    background: rgba(255, 255, 255, 0.75); /* 半透明 */
+    backdrop-filter: blur(2px);          /* 毛玻璃 */
+    
+    text-align: center;
+    border-radius: 12px;
+    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* 頭像 */
+.avatar {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* 副標 */
+.subtitle {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.inline-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* 小名 */
+.nickname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.nickname img {
+    width: 30px;
+    height: 30px;
+}
+
+/* GitHub icon */
+.github-icon {
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* =========================
+    按鈕
+========================= */
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}

@@ -1,0 +1,103 @@
+/* =========================
+    Home Base
+========================= */
+
+.home-scale {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+
+    background:
+        linear-gradient(rgba(6, 8, 28, 0.16), rgba(6, 8, 28, 0.34)),
+        url("../../assets/images/home/bg.png") center / cover no-repeat;
+}
+
+.home-page {
+    position: relative;
+
+    width: 1720px;
+    min-height: 980px;
+
+    margin: 0 auto;
+
+    padding:
+        var(--page-padding-top)
+        var(--page-padding-right)
+        var(--page-padding-bottom)
+        var(--page-padding-left);
+
+    display: grid;
+
+    grid-template-columns:
+        var(--left-area-width)
+        var(--center-area-width)
+        var(--right-area-width);
+
+    grid-template-areas:
+        "profile main sidebar"
+        "profile main sidebar"
+        ". footer footer";
+
+    column-gap: var(--column-gap);
+    row-gap: var(--row-gap);
+
+    justify-content: center;
+    align-items: start;
+
+    background: none;
+
+    isolation: isolate;
+    overflow: visible;
+}
+
+/* =========================
+    Area
+========================= */
+
+.main-area {
+    grid-area: main;
+
+    width: var(--center-area-width);
+
+    position: relative;
+    left: var(--main-area-offset-x);
+    top: var(--main-area-offset-y);
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: var(--row-gap);
+
+    overflow: visible;
+
+    /*
+        這裡是重點：
+        start = navbar / about / collections 左邊對齊
+        card 寬度可以不同，但左邊永遠同一條線
+    */
+    justify-items: start;
+    align-items: start;
+}
+
+.side-area {
+    grid-area: sidebar;
+
+    width: var(--right-area-width);
+
+    position: relative;
+    left: var(--side-area-offset-x);
+    top: var(--side-area-offset-y);
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+
+    padding-top: 58px;
+
+    /*
+        這裡是重點：
+        end = favorites / watching / player 右邊對齊
+        card 寬度可以不同，但右邊永遠同一條線
+    */
+    justify-items: end;
+    align-items: start;
+}

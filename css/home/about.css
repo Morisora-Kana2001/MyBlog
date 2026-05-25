@@ -1,0 +1,55 @@
+/* =========================
+    About
+========================= */
+
+.about-card {
+    width: var(--about-card-width);
+    height: var(--about-card-height);
+    padding: 48px 48px 22px;
+    
+    position: relative;
+    z-index: 20;
+    overflow: visible;
+}
+
+.about-card h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.about-card h2 span {
+    color: var(--pink);
+    text-shadow: 0 0 12px rgba(241, 155, 255, 0.9);
+}
+
+.about-card h2::after {
+    content: "";
+    display: block;
+    width: 145px;
+    height: 1px;
+    margin-top: 10px;
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(230, 210, 255, 0.9) 0 5px,
+        transparent 5px 9px
+    );
+}
+
+.quote {
+    color: #e1a6ff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    max-width: 420px;
+}
+
+.about-text p {
+    line-height: 2.05;
+    font-size: 16px;
+    color: #f3efff;
+    margin-bottom: 3px;
+}
+

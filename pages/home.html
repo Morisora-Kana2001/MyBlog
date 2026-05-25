@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Morisora Kana</title>
+
+    <link rel="stylesheet" href="../css/home/home.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+</head>
+
+<body>
+
+    <!-- Loading -->
+    <div id="loading">
+        <div class="loading-icons">
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+        </div>
+    </div>
+
+    <!-- 白光 -->
+    <div id="flash"></div>
+
+    <div class="home-scale">
+        <main class="home-page">
+
+            <!-- 背景遮罩 -->
+            <div class="bg-overlay"></div>
+
+            <!-- 左側個人卡片 -->
+            <aside class="profile-card glass-card">
+
+                <div class="profile-logo">
+                    <h1>森空神奈</h1>
+                    <span>Morisora Kana</span>
+                </div>
+
+                <div class="avatar-wrap">
+                    <img src="../assets/images/home/avatar.png" alt="avatar" class="avatar">
+                </div>
+
+                <div class="profile-info">
+                    <h2>森空神奈</h2>
+                    <p class="romaji">Morisora Kana</p>
+                    <p class="major">Electronic Engineering Student</p>
+
+                    <div class="stars">
+                        <span>✦</span>
+                        <span>✦</span>
+                        <span>✦</span>
+                    </div>
+
+                    <p class="school">National Ilan University</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Morisora-Kana2001"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://x.com/Morisora_kana"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danile1231215@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span>Contact</span>
+                </a>
+
+            </aside>
+
+            <!-- 主要內容區 -->
+            <section class="main-area">
+
+                <!-- 導覽列 -->
+                <nav class="navbar">
+                    <a href="./home.html" class="active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span>test</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-spa"></i>
+                        <span>test</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>test</span>
+                    </a>
+                </nav>
+
+                <!-- About -->
+                <section class="about-card glass-card">
+                    <h2>About Me <span>✿</span></h2>
+
+                    <p class="quote">
+                        「世界は、静かな夜にいちばん綺麗なんです。」
+                    </p>
+
+                    <div class="about-text">
+                        <p>你好，我是森空神奈。</p>
+                        <p>一名電子工程系的學生，喜歡寫日文、用程式做一些有趣的小東西，偶爾也會畫畫和拍照。</p>
+                        <p>我喜歡動畫、音樂，還有在深夜思考一些沒有解答的問題。</p>
+                        <p>這個網站是我記錄喜歡的東西，以及創造一個屬於自己的小小世界。</p>
+                    </div>
+    
+                    <!--<div class="status-box">
+                        <div class="status-icon">
+                            <img src="../assets/images/home/sign.png" alt="status">
+                        </div>
+
+                        <div>
+                            <h3>Status</h3>
+                            <p>coding...</p>
+                        </div>
+                    </div>-->
+
+                    <div class="status-box" id="status-box">
+                        <div class="status-icon">
+                            <img src="../assets/images/home/sign.png" alt="status">
+                        </div>
+                    
+                        <div class="status-info">
+                            <h3>Status</h3>
+                            <p id="status-text">online</p>
+                        </div>
+
+                        <img id="status-state-icon" src="../assets/icons/status/online.png" alt="online">
+
+                        <div class="status-menu" id="status-menu">
+                            <button data-status="online">online</button>
+                            <button data-status="offline">offline</button>
+                            <button data-status="sleep">sleep</button>
+                            <button data-status="working">working</button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Collections -->
+                <section class="collections-card glass-card">
+                    <h2>✿ Collections</h2>
+
+                    <div class="collection-grid">
+
+                        <a href="#" class="collection-item">
+                            <img src="../assets/images/home/collection-1.jpg" alt="風景写真">
+                            <div>
+                                <h3>風景写真</h3>
+                                <p>Photographs</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="collection-item">
+                            <img src="../assets/images/home/collection-2.jpg" alt="落書き">
+                            <div>
+                                <h3>落書き</h3>
+                                <p>Illustrations</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="collection-item">
+                            <img src="../assets/images/home/collection-3.jpg" alt="コード置き場">
+                            <div>
+                                <h3>コード置き場</h3>
+                                <p>Code Snippets</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="collection-item">
+                            <img src="../assets/images/home/collection-4.jpg" alt="音楽プレイリスト">
+                            <div>
+                                <h3>音楽プレイリスト</h3>
+                                <p>Playlists</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- 右側資訊欄 -->
+            <aside class="side-area">
+
+                <div class="site-volume" id="site-volume">
+                    <button class="music-note" id="mute-toggle" type="button">
+                        <i class="fa-solid fa-music"></i>
+                    </button>
+
+                    <input
+                    id="site-volume-slider"
+                    class="site-volume-slider"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.7"
+                    >
+                </div>
+
+                <!-- Favorites -->
+                <section class="favorites-card glass-card">
+                    <h2>✿ My Favorites</h2>
+
+                    <div class="favorite-list">
+
+                        <div class="favorite-item">
+                            <img src="../assets/images/home/favorite-1.jpg" alt="">
+                            <div>
+                                <h3>ゆるキャン△</h3>
+                                <p>Anime</p>
+                            </div>
+                        </div>
+
+                        <div class="favorite-item">
+                            <img src="../assets/images/home/favorite-2.jpg" alt="">
+                            <div>
+                                <h3>ヨルシカ</h3>
+                                <p>Music</p>
+                            </div>
+                        </div>
+
+                        <div class="favorite-item">
+                            <img src="../assets/images/home/favorite-3.jpg" alt="">
+                            <div>
+                                <h3>原神 (Genshin Impact)</h3>
+                                <p>Game</p>
+                            </div>
+                        </div>
+
+                        <div class="favorite-item">
+                            <img src="../assets/images/home/favorite-4.jpg" alt="">
+                            <div>
+                                <h3>秒速5センチメートル</h3>
+                                <p>Movie</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="more-link">
+                        More
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+                </section>
+
+                <!-- Now Playing -->
+                <section class="player-card glass-card">
+                    <h2>
+                        <i class="fa-solid fa-music"></i>
+                        Now Playing
+                    </h2>
+
+                    <audio id="music-audio"></audio>
+
+                    <div class="player-info">
+                        <div class="song-row">
+                            <div>
+                                <h3 id="music-title">test</h3>
+                                <p id="music-artist">test</p>
+                            </div>
+                            <span id="music-time">0:00 / 0:00</span>
+                        </div>
+
+                        <div class="progress music-progress" id="music-progress">
+                            <div id="music-progress-bar"></div>
+                        </div>
+
+                        <div class="player-controls">
+                            <button id="prev-song" type="button">
+                                <i class="fa-solid fa-backward-step"></i>
+                            </button>
+
+                            <button id="play-toggle" class="play-btn" type="button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+
+                            <button id="next-song" type="button">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Currently Watching -->
+                <section class="watching-card glass-card">
+                    <h2>
+                        <i class="fa-solid fa-tv"></i>
+                        Currently Watching
+                    </h2>
+
+                    <!-- 搜尋列 -->
+                    <div class="watching-search">
+                        <input
+                        id="youtube-search-input"
+                        type="text"
+                        placeholder="Search YouTube..."
+                        >
+
+                        <button id="youtube-search-btn" type="button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                        <div class="youtube-results" id="youtube-results"></div>
+                    </div>
+
+                    <!-- YouTube iframe -->
+                    <div class="youtube-frame">
+                        <div id="youtube-player"></div>
+                    </div>
+
+                    <!-- 影片資訊 --> 
+                    <div class="watching-info">
+                        <h3 id="youtube-title">
+                            尚未播放
+                        </h3>
+
+                        <p id="youtube-channel">
+                            Search or select a video
+                        </p>
+                    </div>
+                </section>
+
+            </aside>
+
+            <footer class="footer">
+                © 2026 Morisora Kana. All rights reserved.
+            </footer>
+
+        </main>
+    </div>
+    
+    <script type="module" src="../js/home/home.js"></script>
+    <!--<script src="../js/home/particles.js"></script>-->
+
+</body>
+
+</html>
